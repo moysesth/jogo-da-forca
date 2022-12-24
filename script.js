@@ -84,7 +84,7 @@ window.onload = function () {
         }
         for (var i = 0; i < geusses.length; i++) {
             if (counter + space === geusses.length) {
-                showLives.innerHTML = "VALEU NATALIIIINA! Você acertou! <br/> O seu presente será enviado por mensagem!";
+                showLives.innerHTML = "VALEU NATALIIIINA! Você acertou! <br/> Para acessar o seu presente, <a href="https://moysesth.github.io/jogo-da-forca/">clique aqui</a>ty";
             }
         }
     }
