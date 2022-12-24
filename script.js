@@ -187,13 +187,9 @@ window.onload = function () {
     // Play
     play = function () {
         categories = [
-            // ["viagem para ilhabela"],
-            // ["viagem para ilhabela"],
-            // ["viagem para ilhabela"]
-
-            ["aaaaa"],
-            ["aaaaa"],
-            ["aaaaa"]
+            ["viagem para ilhabela"],
+            ["viagem para ilhabela"],
+            ["viagem para ilhabela"]
         ];
 
         chosenCategory = categories[Math.floor(Math.random() * categories.length)];
