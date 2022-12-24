@@ -80,7 +80,7 @@ window.onload = function () {
     comments = function () {
         showLives.innerHTML = "Você tem " + lives + " palpites restantes";
         if (lives < 1) {
-            showLives.innerHTML = "ERROUUUU!";
+            showLives.innerHTML = "ERROUUUU! <br/> Como é Natal, tente novamente!";
         }
         for (var i = 0; i < geusses.length; i++) {
             if (counter + space === geusses.length) {
