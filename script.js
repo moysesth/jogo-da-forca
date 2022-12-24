@@ -222,7 +222,8 @@ window.onload = function () {
 
         var catagoryIndex = categories.indexOf(chosenCategory);
         var hintIndex = chosenCategory.indexOf(word);
-        showClue.innerHTML = "Dica: " + hints[catagoryIndex][hintIndex];
+        showClue.innerHTML = "Dica: é cercada por água";
+        //+ hints[catagoryIndex][hintIndex];
     };
 
     // Reset
