@@ -15,8 +15,8 @@ window.onload = function () {
     var space;              // Number of spaces in word '-'
 
     //URL do presente
-    const urlViagem = document.createElement('div')
-    urlViagem.innerHTML = "<a href='https://www.airbnb.com.br/rooms/545087297659336674?source_impression_id=p3_1671488384_Le7rk96V%2B61AHpAI&check_in=2023-01-27&guests=1&adults=1&check_out=2023-01-30&modal=PHOTO_TOUR_SCROLLABLE'>Clique aqui para acessar o seu presente!</a>"
+    const urlViagem = "https://www.airbnb.com.br/rooms/545087297659336674?source_impression_id=p3_1671488384_Le7rk96V%2B61AHpAI&check_in=2023-01-27&guests=1&adults=1&check_out=2023-01-30&modal=PHOTO_TOUR_SCROLLABLE"
+    //urlViagem.innerHTML = "<a href='https://www.airbnb.com.br/rooms/545087297659336674?source_impression_id=p3_1671488384_Le7rk96V%2B61AHpAI&check_in=2023-01-27&guests=1&adults=1&check_out=2023-01-30&modal=PHOTO_TOUR_SCROLLABLE'>Clique aqui para acessar o seu presente!</a>"
 
 
     // Get elements
@@ -46,11 +46,11 @@ window.onload = function () {
     // Select Catagory
     var selectCat = function () {
         if (chosenCategory === categories[0]) {
-            catagoryName.innerHTML = "Lembrete: vale o seu presente de natal!";
+            catagoryName.innerHTML = "Lembrete: vale o seu presente de natal! &#127876;";
         } else if (chosenCategory === categories[1]) {
-            catagoryName.innerHTML = "Lembrete: vale o seu presente de natal!";
+            catagoryName.innerHTML = "Lembrete: vale o seu presente de natal! &#127876;";
         } else if (chosenCategory === categories[2]) {
-            catagoryName.innerHTML = "Lembrete: vale o seu presente de natal!";
+            catagoryName.innerHTML = "Lembrete: vale o seu presente de natal! &#127876;";
         }
     }
 
@@ -84,7 +84,9 @@ window.onload = function () {
         }
         for (var i = 0; i < geusses.length; i++) {
             if (counter + space === geusses.length) {
-                showLives.innerHTML = "VALEU NATALIIIINA! Você acertou! <br/> Para acessar o seu presente, <a href="https://moysesth.github.io/jogo-da-forca/">clique aqui</a>ty";
+                showLives.innerHTML = 'VALEU NATALIIIIINA! Você acertou!! <br/> Para acessar o seu presente, <a href="https://www.airbnb.com.br/rooms/545087297659336674?source_impression_id=p3_1671488384_Le7rk96V%2B61AHpAI&check_in=2023-01-27&guests=1&adults=1&check_out=2023-01-30&modal=PHOTO_TOUR_SCROLLABLE"> clique aqui</a>';
+                //showLives.innerHTML = "<span>VALEU NATALIIIINA! Você acertou! <br/> Para acessar o seu presente, clique aqui</span>";
+                //<a href="https://moysesth.github.io/jogo-da-forca/">clique aqui</a>
             }
         }
     }
@@ -187,9 +189,9 @@ window.onload = function () {
     // Play
     play = function () {
         categories = [
-            ["viagem para ilhabela"],
-            ["viagem para ilhabela"],
-            ["viagem para ilhabela"]
+            ["viagem-ilhabela"],
+            ["viagem-ilhabela"],
+            ["viagem-ilhabela"]
         ];
 
         chosenCategory = categories[Math.floor(Math.random() * categories.length)];
